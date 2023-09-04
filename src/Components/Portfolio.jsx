@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/Bg_1.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -29,30 +29,26 @@ const imageAltText = "desktop with books and laptop";
  * An array of objects that will be used to display for your project
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
-const projectList = [
+const certificationsList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "Microsoft Learn AI Skills Challenge",
+    description: "Learnt about various Cognitive Services in Azure.",
+    url: "https://learn.microsoft.com/en-us/users/nirmalkumar6112/",
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Google Cloud Skills Boost",
+    description: "Completed various hands-on labs on Google Cloud Platform and secured various skils badges.",
+    url: "https://linktr.ee/nirmalkumar6112",
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "Competitive Progamming Skills",
+    description: "Check out my various CP skills profiles.",
+    url: "https://linktr.ee/nirmalkumar6112",
   },
   {
-    title: "GitHub Codespaces and github.dev",
-    description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+    title: "Wanna explore more about me?",
+    description: "Check out my social media profiles in Linktree link tagged.",
+    url: "https://linktr.ee/nirmalkumar6112",
   },
 ];
 
@@ -64,12 +60,12 @@ const Portfolio = () => {
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover",animation: "1s ease-out 0s 1 slideIn" }}
             alt={imageAltText}
           />
         </div>
         <div className="container">
-          {projectList.map((project) => (
+          {certificationsList.map((project) => (
             <div className="box" key={project.title}>
               <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
